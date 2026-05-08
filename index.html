@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Instagram" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen font-roboto">
+    <div class="relative min-h-screen box-border w-full container py-2 px-4">
+      <p class="text-[14px] text-gray-800 text-center">English (US)</p>
+
+      <img
+        src="./images/instagram-sign-logo.svg"
+        class="w-[50px] mx-auto pt-[50px] pb-[50px]"
+        alt="instagram-logo"
+      />
+
+      <div>
+        <form class="flex flex-col gap-2">
+          <input
+            class="w-full border border-[#DBDBDB] text-[#8E8E8E] rounded-[6px] py-3 px-4 text-[14px] font-medium"
+            placeholder="Username, email, or mobile number"
+            type="text"
+            name="username"
+            id="username-input"
+          />
+
+          <span class="flex relative">
+            <input
+              class="w-full border border-[#DBDBDB] text-[#8E8E8E] rounded-[6px] py-3 px-4 text-[14px] font-medium"
+              placeholder="Password"
+              type="password"
+              id="password-input"
+              name="password"
+            />
+            <button type="button" class="absolute right-2 top-3">
+              <img
+                src="./images/eye-hidden.png"
+                class="hidden-img w-[20px]"
+                alt=""
+              />
+            </button>
+          </span>
+
+          <button
+            class="bg-[#0505FA] text-white w-full rounded-[20px] py-[4px] text-[13px] font-medium"
+            type="submit"
+          >
+            Log in
+          </button>
+        </form>
+
+        <p class="text-center text-[14px] text-[#262626] mt-[12px]">
+          Forgot password?
+        </p>
+      </div>
+
+      <button
+        class="absolute bottom-2 left-4 right-4 border border-[#0064E0] text-[#0064E0] rounded-[20px] py-[4px] text-[13px] font-medium"
+      >
+        Create new account
+      </button>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>
